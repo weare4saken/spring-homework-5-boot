@@ -1,15 +1,16 @@
 package weare4saken.springboothomework.dao;
 
+import org.springframework.data.jpa.repository.JpaRepository;
 import weare4saken.springboothomework.entity.Employee;
 
-import java.util.List;
+public interface EmployeeRepo extends JpaRepository<Employee, Integer> {
 
-public interface EmployeeDAO {
-
-    List<Employee> getEmployees();
+   /* List<Employee> getEmployees();
     Employee getEmployeeById(int id);
     void addEmployee(Employee employee);
     void updateEmployee(Employee employee);
-    void deleteEmployee(int id);
+    void deleteEmployee(int id);*/
+
+
 
 }
